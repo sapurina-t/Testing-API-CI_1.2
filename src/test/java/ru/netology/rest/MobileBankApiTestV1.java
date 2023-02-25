@@ -44,7 +44,7 @@ class MobileBankApiTestV1 {
                 .get("/demo/accounts")
                 // Проверки
                 .then()
-                .body("[0].currency", equalTo("RUR"));
+                .body("[0].currency", equalTo("RUB"));
     }
     @Test
     void shouldCheckCurrencyEqualUsdOrRub() {
